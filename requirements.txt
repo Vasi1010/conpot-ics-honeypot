@@ -1,0 +1,12 @@
+# Analysis side (parser, charts, dashboard). Python 3.10+.
+#   py -3 -m venv .venv
+#   .venv\Scripts\Activate.ps1
+#   pip install -r requirements.txt
+pandas>=2.0
+matplotlib>=3.8
+streamlit>=1.37   # st.fragment(run_every=...) for auto-refresh
+plotly>=5.22      # dashboard: interactive SOC charts (report PNGs still use matplotlib)
+rich>=13.7        # scripts/attack.py: coloured attack console
+pymodbus>=3.6     # scripts/attack.py: Modbus FC3/FC6/FC43 requests
+tzdata>=2024.1   # IANA zones (Asia/Kolkata) on Windows
+pytest>=8.0

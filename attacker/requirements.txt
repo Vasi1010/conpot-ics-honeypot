@@ -1,0 +1,20 @@
+# Attacker-side probe dependencies (install on the Windows laptop)
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1        (Windows PowerShell)
+#   pip install -r requirements.txt
+
+# Modbus/TCP client — pinned to the version the project targets
+pymodbus==3.6.9
+
+# SNMP client — modern pysnmp (async API). Works on Python 3.11/3.12/3.13.
+# NOTE: the old pysnmp 4.4.x does NOT work on Python 3.12+ (it imports the
+# removed 'imp' module), so do not pin back to it. If pysnmp ever misbehaves,
+# the Net-SNMP `snmpwalk`/`snmpget` CLI is the no-Python fallback (see
+# snmp_query.py). pyasn1 is pulled in automatically at a compatible version.
+pysnmp==7.1.30
+
+# OPTIONAL — S7comm client. The modern wheel (we use 3.3.0) BUNDLES the native
+# snap7 library, so NO manual snap7.dll is needed on Windows, and it imports fine
+# on Python 3.13. (The old 1.x needs the removed pkg_resources — don't pin back.)
+# Comment this out if you skip the S7 probe.
+python-snap7==3.3.0
