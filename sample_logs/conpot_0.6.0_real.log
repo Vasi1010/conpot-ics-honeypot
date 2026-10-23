@@ -1,0 +1,15 @@
+WARNING:scapy.runtime:No route found for IPv6 destination :: (no default route?)
+ Please wait while the system copies all specified files
+2026-10-23 17:10:50,702 Fetched 203.0.113.10 as external ip.
+2026-10-23 17:10:50,709 Conpot modbus initialized
+2026-10-23 17:10:50,710 Found and enabled modbus protocol.
+2026-10-23 17:10:50,731 Class    22/0x0016, Instance   1, Attribute     1 <== [{'class': 22}, {'instance': 1}, {'attribute': 1}]
+2026-10-23 17:12:06,188 New http session from 172.17.0.1 (31e54764-bf5f-435d-8b1b-4387e2b7e4a4)
+2026-10-23 17:12:06,618 HTTP/1.1 GET request from ('172.17.0.1', 33620): ('/favicon.ico', [('Host', 'localhost:8080'), ('Connection', 'keep-alive'), ('sec-ch-ua-platform', '"Windows"'), ('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36'), ('sec-ch-ua', '"Not:A-Brand";v="8", "Chromium";v="156", "Brave";v="156"'), ('sec-ch-ua-mobile', '?0'), ('Accept', 'image/jxl,image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'), ('Sec-GPC', '1'), ('Sec-Fetch-Site', 'same-origin'), ('Sec-Fetch-Mode', 'no-cors'), ('Sec-Fetch-Dest', 'image'), ('Referer', 'http://localhost:8080/index.html'), ('Accept-Encoding', 'gzip, deflate, br, zstd'), ('Accept-Language', 'en-US,en;q=0.6'), ('Cookie', 'path=/')], None). 31e54764-bf5f-435d-8b1b-4387e2b7e4a4
+2026-10-23 17:15:01,414 New modbus session from 172.17.0.1 (2631aacc-97f7-44d6-b319-8f1f9e618057)
+2026-10-23 17:15:01,421 New Modbus connection from 172.17.0.1:48510. (2631aacc-97f7-44d6-b319-8f1f9e618057)
+2026-10-23 17:15:01,465 Modbus traffic from 172.17.0.1: {'request': b'000100000005012b0e0100', 'slave_id': 1, 'function_code': 43, 'response': b'2b0e010100000300075369656d656e73010753494d41544943020653372d323030'} (2631aacc-97f7-44d6-b319-8f1f9e618057)
+2026-10-23 17:15:01,466 Modbus response sent to 172.17.0.1
+ERROR:conpot.protocols.modbus.slave:Exception caught: Modbus Error: Exception code = 2. (A proper response will be sent to the peer)
+2026-10-23 17:15:03,484 Exception caught: Modbus Error: Exception code = 2. (A proper response will be sent to the peer)
+2026-10-23 17:15:03,492 Modbus traffic from 172.17.0.1: {'request': b'000200000006010300000005', 'slave_id': 1, 'function_code': 3, 'response': b'8302'} (2631aacc-97f7-44d6-b319-8f1f9e618057)

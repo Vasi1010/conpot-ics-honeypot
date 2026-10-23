@@ -1,0 +1,73 @@
+2026-10-21 09:58:02,114 Starting Conpot using template: /usr/local/lib/python3.8/site-packages/conpot/templates/default
+2026-10-21 09:58:02,115 Starting Conpot using configuration found in: /etc/conpot/conpot.cfg
+2026-10-21 09:58:02,302 Fetched 203.0.113.10 as external ip.
+2026-10-21 09:58:02,413 Modbus server started on: ('0.0.0.0', 5020)
+2026-10-21 09:58:02,416 S7Comm server started on: ('0.0.0.0', 10201)
+2026-10-21 09:58:02,531 SNMP server started on: ('0.0.0.0', 16100)
+2026-10-21 09:58:02,545 HTTP server started on: ('0.0.0.0', 8800)
+2026-10-21 10:14:05,331 New Modbus connection from 198.51.100.77:40112. (a6a3a450-6513-470e-a69e-0d37f2a74de4)
+2026-10-21 10:14:05,541 Modbus client disconnected. (a6a3a450-6513-470e-a69e-0d37f2a74de4)
+2026-10-21 10:14:06,181 New S7 connection from 198.51.100.77:40118. (892f902b-d23f-4824-928b-2f330c5c7fd0)
+2026-10-21 10:14:06,371 S7 client disconnected. (892f902b-d23f-4824-928b-2f330c5c7fd0)
+2026-10-21 10:14:07,271 HTTP/1.1 GET request from ('198.51.100.77', 40126): ('/', [('Host', '192.168.1.50'), ('User-Agent', 'Mozilla/5.0 zgrab/0.x'), ('Accept', '*/*')], None). 0ed90475-9531-485d-9d9d-c9f81818e811
+2026-10-21 10:14:07,279 HTTP/1.1 response to ('198.51.100.77', 40126): 200. 0ed90475-9531-485d-9d9d-c9f81818e811
+2026-10-21 10:14:09,931 New Modbus connection from 198.51.100.77:40131. (1600a35a-0999-40d8-b6f6-75cc81e74ef5)
+2026-10-21 10:14:09,971 Modbus traffic from 198.51.100.77: {'request': b'133700000005012b0e0100', 'slave_id': 1, 'function_code': 43, 'response': b'13370000000301ab01'} (1600a35a-0999-40d8-b6f6-75cc81e74ef5)
+2026-10-21 10:14:10,121 Modbus client disconnected. (1600a35a-0999-40d8-b6f6-75cc81e74ef5)
+2026-10-21 10:21:30,444 New Modbus connection from 192.168.1.23:51740. (1738f7d9-3d9c-4724-91e2-0b8f6b0d549b)
+2026-10-21 10:21:30,448 Modbus client disconnected. (1738f7d9-3d9c-4724-91e2-0b8f6b0d549b)
+2026-10-21 10:21:30,457 New S7 connection from 192.168.1.23:51741. (d3ac94af-0f21-4db6-acad-4a268d116ece)
+2026-10-21 10:21:30,462 S7 client disconnected. (d3ac94af-0f21-4db6-acad-4a268d116ece)
+2026-10-21 10:23:10,579 New Modbus connection from 192.168.1.23:51802. (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,609 Modbus traffic from 192.168.1.23: {'request': b'000100000006010100000008', 'slave_id': 1, 'function_code': 1, 'response': b'00010000000401010105'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,664 Modbus traffic from 192.168.1.23: {'request': b'000200000006010200000008', 'slave_id': 1, 'function_code': 2, 'response': b'00020000000401020100'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,719 Modbus traffic from 192.168.1.23: {'request': b'00030000000601030000000a', 'slave_id': 1, 'function_code': 3, 'response': b'0003000000170103140000000000190000000000000000000000000000'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,774 Modbus traffic from 192.168.1.23: {'request': b'00040000000601040000000a', 'slave_id': 1, 'function_code': 4, 'response': b'0004000000170104140001000000000000000000000000000000000000'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,829 Modbus traffic from 192.168.1.23: {'request': b'0005000000060106000004d2', 'slave_id': 1, 'function_code': 6, 'response': b'0005000000060106000004d2'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,884 Modbus traffic from 192.168.1.23: {'request': b'000600000006010300000001', 'slave_id': 1, 'function_code': 3, 'response': b'00060000000501030204d2'} (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:23:10,904 Modbus client disconnected. (a170b338-3926-4059-b28c-105d1fb17c23)
+2026-10-21 10:25:40,822 SNMPv2c Get request from ('192.168.1.23', 61334): 1.3.6.1.2.1.1.1.0 
+2026-10-21 10:25:40,825 SNMPv2c Get response to ('192.168.1.23', 61334): 1.3.6.1.2.1.1.1.0 Siemens, SIMATIC, S7-200
+2026-10-21 10:25:41,005 SNMPv2c Get request from ('192.168.1.23', 61335): 1.3.6.1.2.1.1.3.0 
+2026-10-21 10:25:41,008 SNMPv2c Get response to ('192.168.1.23', 61335): 1.3.6.1.2.1.1.3.0 8264412
+2026-10-21 10:25:41,188 SNMPv2c Get request from ('192.168.1.23', 61336): 1.3.6.1.2.1.1.4.0 
+2026-10-21 10:25:41,191 SNMPv2c Get response to ('192.168.1.23', 61336): 1.3.6.1.2.1.1.4.0 Siemens AG
+2026-10-21 10:25:41,371 SNMPv2c Get request from ('192.168.1.23', 61337): 1.3.6.1.2.1.1.5.0 
+2026-10-21 10:25:41,374 SNMPv2c Get response to ('192.168.1.23', 61337): 1.3.6.1.2.1.1.5.0 CP 443-1 EX40
+2026-10-21 10:25:41,554 SNMPv2c Get request from ('192.168.1.23', 61338): 1.3.6.1.2.1.1.6.0 
+2026-10-21 10:25:41,557 SNMPv2c Get response to ('192.168.1.23', 61338): 1.3.6.1.2.1.1.6.0 Venus
+2026-10-21 10:25:41,582 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1 
+2026-10-21 10:25:41,585 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.1.0 Siemens, SIMATIC, S7-200
+2026-10-21 10:25:41,610 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.1.0 
+2026-10-21 10:25:41,613 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.2.0 1.3.6.1.4.1.20408
+2026-10-21 10:25:41,638 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.2.0 
+2026-10-21 10:25:41,641 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.3.0 8264412
+2026-10-21 10:25:41,666 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.3.0 
+2026-10-21 10:25:41,669 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.4.0 Siemens AG
+2026-10-21 10:25:41,694 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.4.0 
+2026-10-21 10:25:41,697 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.5.0 CP 443-1 EX40
+2026-10-21 10:25:41,722 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.5.0 
+2026-10-21 10:25:41,725 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.6.0 Venus
+2026-10-21 10:25:41,750 SNMPv2c GetNext request from ('192.168.1.23', 61339): 1.3.6.1.2.1.1.6.0 
+2026-10-21 10:25:41,753 SNMPv2c GetNext response to ('192.168.1.23', 61339): 1.3.6.1.2.1.1.7.0 72
+2026-10-21 10:27:02,596 New S7 connection from 192.168.1.23:51866. (95e60af5-93bd-44cf-8fd6-30f1f29d0da9)
+2026-10-21 10:27:02,656 S7 traffic from 192.168.1.23: {'request': b'0300001902f08032010000010000080000f0000001000101e0', 'response': b'0300001b02f080320300000100000800000000cb1971174494d649'} (95e60af5-93bd-44cf-8fd6-30f1f29d0da9)
+2026-10-21 10:27:02,716 S7 traffic from 192.168.1.23: {'request': b'0300002102f080320700000100000800080001120411440100ff090004001c0000', 'response': b'0300008b02f0803203000001000008000000001e69fedaa0eee8b9997f5c7c2999fdafe593253cd654af4dfad71427a0aeb3fee9232f8af2211f9ee491c5b10becb5563bfc1e6f93427ecbc8fe2955e5cd8e46dc8ed4b7c2764d2a5a4d767706f85d8690024ad6bda3401be9c8cbccc935f6cd1f61226ae15338ae1a34004d33ba0d246ac04c81b1baf23e'} (95e60af5-93bd-44cf-8fd6-30f1f29d0da9)
+2026-10-21 10:27:02,776 S7 traffic from 192.168.1.23: {'request': b'0300002102f080320700000100000800080001120411440100ff09000404240000', 'response': b'0300003b02f08032030000010000080000000032e70e20e2a6668de7f47e8467e546d53ec8e2a1257bdb256c9b3e4fbb498146ef7030cbf9537252'} (95e60af5-93bd-44cf-8fd6-30f1f29d0da9)
+2026-10-21 10:27:02,806 S7 client disconnected. (95e60af5-93bd-44cf-8fd6-30f1f29d0da9)
+2026-10-21 10:40:18,395 HTTP/1.1 GET request from ('203.0.113.45', 52011): ('/', [('Host', '192.168.1.50'), ('User-Agent', 'python-requests/2.32.3'), ('Accept', '*/*')], None). 16ac4191-a26a-40ae-844f-1574f037afc6
+2026-10-21 10:40:18,403 HTTP/1.1 response to ('203.0.113.45', 52011): 200. 16ac4191-a26a-40ae-844f-1574f037afc6
+2026-10-21 10:40:19,803 HTTP/1.1 GET request from ('203.0.113.45', 52012): ('/index.html', [('Host', '192.168.1.50'), ('User-Agent', 'python-requests/2.32.3'), ('Accept', '*/*')], None). 9bb183e1-1570-466b-82b3-8755cd37880e
+2026-10-21 10:40:19,811 HTTP/1.1 response to ('203.0.113.45', 52012): 200. 9bb183e1-1570-466b-82b3-8755cd37880e
+2026-10-21 10:41:02,876 New Modbus connection from 203.0.113.45:52020. (dcded204-43b3-4f66-910e-2cb638efbaeb)
+2026-10-21 10:41:02,946 Modbus traffic from 203.0.113.45: {'request': b'000100000006010300000014', 'slave_id': 1, 'function_code': 3, 'response': b'00010000002b01032800000000000000000000000000000000000000000000000000000000000000000000000000000000'} (dcded204-43b3-4f66-910e-2cb638efbaeb)
+2026-10-21 10:41:03,846 Modbus traffic from 203.0.113.45: {'request': b'00020000000b0110000a000204000001f4', 'slave_id': 1, 'function_code': 16, 'response': b'000200000003019002'} (dcded204-43b3-4f66-910e-2cb638efbaeb)
+2026-10-21 10:41:03,876 Modbus client disconnected. (dcded204-43b3-4f66-910e-2cb638efbaeb)
+2026-10-21 10:42:15,244 HTTP/1.1 POST request from ('203.0.113.45', 52031): ('/index.html', [('Host', '192.168.1.50'), ('User-Agent', 'python-requests/2.32.3'), ('Accept', '*/*'), ('Content-Type', 'application/x-www-form-urlencoded')], b'setpoint=75&mode=manual'). fe8ad4a1-56d2-468c-82f4-b342742a8063
+2026-10-21 10:42:15,252 HTTP/1.1 response to ('203.0.113.45', 52031): 200. fe8ad4a1-56d2-468c-82f4-b342742a8063
+2026-10-21 10:50:01,112 SNMPv1 Get request from ('198.51.100.200', 33001): 1.3.6.1.2.1.1.1.0 
+2026-10-21 10:50:01,115 SNMPv1 Get response to ('198.51.100.200', 33001): 1.3.6.1.2.1.1.1.0 Siemens, SIMATIC, S7-200
+2026-10-21 10:50:20,400 New Modbus connection from 198.51.100.200:33010. (5b1e2c7a-3f4d-4e8a-9c21-7d6f0a9b3e11)
+2026-10-21 10:50:20,455 Modbus traffic from 198.51.100.200: {'request': b'000100000006010300000005', 'slave_id': 1, 'function_code': 3, 'response': b'00010000000d01030a0000000000000000000000'} (5b1e2c7a-3f4d-4e8a-9c21-7d6f0a9b3e11)
+2026-10-21 10:50:20,510 Modbus traffic from 198.51.100.200: {'request': b'000200000006010400000005', 'slave_id': 1, 'function_code': 4, 'response': b'00020000000d01040a0000000000000000000000'} (5b1e2c7a-3f4d-4e8a-9c21-7d6f0a9b3e11)
+2026-10-21 10:50:20,560 Modbus client disconnected. (5b1e2c7a-3f4d-4e8a-9c21-7d6f0a9b3e11)
