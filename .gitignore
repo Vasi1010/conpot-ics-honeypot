@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Native libs that may get dropped next to the S7 script
+snap7.dll
+*.so
+
+# Keep the logs/ folder but never commit captures: a real conpot.log contains
+# the honeypot's public IP ("Fetched <ip> as external ip"). Anonymized excerpts
+# belong in sample_logs/.
+logs/*.log
+!logs/.gitkeep
+
+# Analysis outputs (charts, parsed CSVs) and test cache
+output/
+.pytest_cache/

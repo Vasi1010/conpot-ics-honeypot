@@ -1,0 +1,19 @@
+# Keep the build context tiny — only the Dockerfile + conpot_template/ matter.
+.git
+.venv
+attacker/.venv
+**/__pycache__
+.pytest_cache
+logs
+output
+slides
+docs
+tests
+dashboard
+analysis
+parser
+scripts
+sample_logs
+*.docx
+*.html
+*.md
