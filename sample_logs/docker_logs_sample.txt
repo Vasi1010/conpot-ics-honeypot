@@ -1,0 +1,18 @@
+2026-10-22T05:30:01.204118733Z 2026-10-22 11:00:01,204 Starting Conpot using template: /usr/local/lib/python3.8/site-packages/conpot/templates/default
+2026-10-22T05:30:01.528902114Z 2026-10-22 11:00:01,528 Modbus server started on: ('0.0.0.0', 5020)
+2026-10-22T05:30:01.533771020Z 2026-10-22 11:00:01,533 S7Comm server started on: ('0.0.0.0', 10201)
+2026-10-22T05:30:01.533998712Z /usr/local/lib/python3.8/site-packages/gevent/hub.py:161: UserWarning: libuv only supports millisecond timer resolution
+2026-10-22T05:30:01.534001007Z   warnings.warn("libuv only supports millisecond timer resolution; "
+2026-10-22T05:31:10.100412300Z 2026-10-22 11:01:10,100 New Modbus connection from 172.17.0.1:50122. (0c9a7e52-81d4-4a43-b0c4-3f1e6a2d9b70)
+2026-10-22T05:31:10.160332900Z 2026-10-22 11:01:10,160 Modbus traffic from 172.17.0.1: {'request': b'000100000006010300000004', 'slave_id': 1, 'function_code': 3, 'response': b'00010000000b0103080000000000000000'} (0c9a7e52-81d4-4a43-b0c4-3f1e6a2d9b70)
+2026-10-22T05:31:10.220127400Z 2026-10-22 11:01:10,220 Modbus traffic from 172.17.0.1: {'request': b'000200000006010600010064', 'slave_id': 1, 'function_code': 6, 'response': b'000200000006010600010064'} (0c9a7e52-81d4-4a43-b0c4-3f1e6a2d9b70)
+2026-10-22T05:31:10.240551200Z 2026-10-22 11:01:10,240 Modbus client disconnected. (0c9a7e52-81d4-4a43-b0c4-3f1e6a2d9b70)
+2026-10-22T05:31:15.022818100Z Traceback (most recent call last):
+2026-10-22T05:31:15.022901400Z   File "/usr/local/lib/python3.8/site-packages/conpot/protocols/s7comm/s7_server.py", line 79, in handle
+2026-10-22T05:31:15.022955100Z ValueError: not enough values to unpack (expected 2, got 0)
+2026-10-22T05:31:20.310204100Z 2026-10-22 11:01:20,310 New S7 connection from 172.17.0.1:50130. (7d2b4f61-0e9c-4a35-8b2e-5c1a9f3e7d48)
+2026-10-22T05:31:20.370118200Z 2026-10-22 11:01:20,370 S7 traffic from 172.17.0.1: {'request': b'0300002102f080320700000100000800080001120411440100ff090004001c0000', 'response': b''} (7d2b4f61-0e9c-4a35-8b2e-5c1a9f3e7d48)
+2026-10-22T05:31:20.400998300Z 2026-10-22 11:01:20,400 S7 client disconnected. (7d2b4f61-0e9c-4a35-8b2e-5c1a9f3e7d48)
+2026-10-22T05:31:44.871203300Z 2026-10-22 11:01:44,871 SNMPv2c Get request from ('192.168.56.1', 50777): 1.3.6.1.2.1.1.1.0 
+2026-10-22T05:31:44.874118800Z 2026-10-22 11:01:44,874 SNMPv2c Get response to ('192.168.56.1', 50777): 1.3.6.1.2.1.1.1.0 Siemens, SIMATIC, S7-200
+
