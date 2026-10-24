@@ -1,0 +1,10 @@
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"               # SOC-style dark dashboard (report PNGs stay light)
+primaryColor = "#49d39a"    # green accent (matches the header status dot)
+backgroundColor = "#0d1117"
+secondaryBackgroundColor = "#161b22"
+textColor = "#e6edf3"
+font = "sans serif"
