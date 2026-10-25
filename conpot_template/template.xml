@@ -1,0 +1,95 @@
+<core>
+    <template>
+        <!-- General information about the template -->
+        <entity name="unit">S7-200</entity>
+        <entity name="vendor">Siemens</entity>
+        <entity name="description">Rough simulation of a basic Siemens S7-200 CPU with 2 slaves</entity>
+        <entity name="protocols">HTTP, MODBUS, s7comm, SNMP</entity>
+        <entity name="creator">the conpot team</entity>
+    </template>
+    <databus>
+        <!-- Core value that can be retrieved from the databus by key -->
+        <key_value_mappings>
+            <key name="FacilityName">
+                <value type="value">"Mouser Factory"</value>
+            </key>
+            <key name="SystemName">
+                <value type="value">"Technodrome"</value>
+            </key>
+            <key name="SystemDescription">
+                <value type="value">"Siemens, SIMATIC, S7-200"</value>
+            </key>
+            <key name="Uptime">
+                <value type="function">conpot.emulators.misc.uptime.Uptime</value>
+            </key>
+            <key name="sysObjectID">
+                <value type="value">"0.0"</value>
+            </key>
+            <key name="sysContact">
+                <value type="value">"Siemens AG"</value>
+            </key>
+            <key name="sysName">
+                <value type="value">"CP 443-1 EX40"</value>
+            </key>
+            <key name="sysLocation">
+                <value type="value">"Venus"</value>
+            </key>
+            <key name="sysServices">
+                <value type="value">"72"</value>
+            </key>
+            <key name="memoryModbusSlave0BlockA">
+                <value type="value">[random.randint(0,1) for b in range(0,128)]</value>
+            </key>
+            <key name="memoryModbusSlave0BlockB">
+                <value type="value">[random.randint(0,1) for b in range(0,32)]</value>
+            </key>
+            <key name="memoryModbusSlave255BlockA">
+                <value type="value">[random.randint(0,1) for b in range(0,128)]</value>
+            </key>
+            <key name="memoryModbusSlave255BlockB">
+                <value type="value">[random.randint(0,1) for b in range(0,32)]</value>
+            </key>
+            <!-- Slave 1: a small pumping / water-treatment station. Fixed values so a
+                 demo capture is reproducible. See conpot_template/modbus/modbus.xml for
+                 the per-register meaning. -->
+            <key name="memoryModbusSlave1Coils">
+                <!-- pump1_run, pump2_run, inlet_valve, outlet_valve, chlorine_dosing,
+                     backwash, standby_pump, fault_latch, then spare -->
+                <value type="value">[1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0]</value>
+            </key>
+            <key name="memoryModbusSlave1Discrete">
+                <!-- mains_ok, pump1_overload, pump2_overload, high_level, low_level,
+                     door_open, estop_ok, leak_detected, then spare -->
+                <value type="value">[1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0]</value>
+            </key>
+            <key name="memoryModbusSlave1Holding">
+                <!-- pump1_speed_rpm, pump2_speed_rpm, tank_hi%, tank_lo%, chlorine_ppb,
+                     mode(0=auto), pressure_setpoint_kpa, alarm_reset, then spare -->
+                <value type="value">[1480,1465,85,20,650,0,500,0,0,0,0,0,0,0,0,0]</value>
+            </key>
+            <key name="memoryModbusSlave1Input">
+                <!-- inlet_kPa, outlet_kPa, flow_L/min, temp_0.1C, level_%, turbidity_NTUx10,
+                     pump1_0.1A, pump2_0.1A, then spare -->
+                <value type="value">[412,538,1260,236,74,18,142,139,0,0,0,0,0,0,0,0]</value>
+            </key>
+            <key name="memoryModbusSlave2BlockC">
+                <value type="value">[random.randint(0,1) for b in range(0,8)]</value>
+            </key>
+            <key name="memoryModbusSlave2BlockD">
+                <value type="value">[0 for b in range(0,32)]</value>
+            </key>
+            <key name="Copyright">
+                <value type="value">"Original Siemens Equipment"</value>
+            </key>
+            <key name="s7_id">
+                <value type="value">"88111222"</value>
+            </key>
+            <key name="s7_module_type">
+                <value type="value">"IM151-8 PN/DP CPU"</value>
+            </key>
+            <key name="empty">
+                <value type="value">""</value>
+            </key>
+        </key_value_mappings>
+    </databus>
+</core>
